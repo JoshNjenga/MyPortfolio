@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ocean Background -->
+    <div class="ocean"></div>
+
+    <!-- Header Section -->
+    <section id="header" class="section box">
+        <h1 id="typing-title">MY PORTFOLIO</h1>
+        <br>
+        <div class="header-content">
+            <div class="profile-section">
+                <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="intro-text">
+                <h2 id="typing-intro"></h2> <!-- Typing Effect Here -->
+                <br>
+                <a href="./Josh-graphic-CV.pdf.pdf" download class="download-btn">Download CV</a> <!-- Proper Button -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section box">
+        <h2>About Me</h2>
+        <p class="justified-text">
+            I am a <span class="highlight">dedicated</span> and <span class="highlight">creative graphic designer</span> with a <span class="highlight">strong background</span> in <span class="highlight">digital marketing</span> and <span class="highlight">web design</span>. With more than four years of experience in the field, I specialize in <span class="highlight">visual storytelling</span> that captures attention and communicates clear messages. I work with businesses to enhance their <span class="highlight">brand visibility</span> through thoughtfully designed materials. My passion lies in creating <span class="highlight">impactful visuals</span> that not only look great but also deliver results.
+        </p>
+    </section>
+
+    <!-- Expanded Experience Section -->
+    <section id="experience" class="section box">
+        <h2>Experience</h2>
+        <p class="justified-text">
+            I have had the opportunity to work with diverse companies, universities, and individuals across various countries. My experience spans from collaborating with local universities like <span class="highlight">Mama Ngina University</span> to working with international companies such as <span class="highlight">African Paradise Adventures</span> and several other SMEs. My work has connected me with <span class="highlight">French</span>, <span class="highlight">American</span>, <span class="highlight">Canadian</span>, and <span class="highlight">Tanzanian</span> clients, expanding my ability to design across different cultural preferences and business expectations. Whether it's for a small local business or a large international brand, I take pride in delivering exceptional visual content that speaks to a global audience.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section box">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <button class="skill-btn">Sketching</button>
+            <button class="skill-btn">Canva</button>
+            <button class="skill-btn">HTML & CSS</button>
+            <button class="skill-btn">Adobe Photoshop</button>
+            <button class="skill-btn">Capcut</button>
+            <button class="skill-btn">After Effects</button>
+            <button class="skill-btn">Adobe Illustrator</button>
+        </div>
+    </section>
+
+    <!-- Work Samples Section with Smooth Slide and 3D Effect -->
+    <section id="work-samples" class="section box">
+        <h2>Work Samples</h2>
+        <div class="slideshow-container">
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button> <!-- Previous button -->
+            <div class="slideshow-wrapper">
+                <!-- All 24 Samples -->
+                <div class="slide"><img src="images/sample (1).png" alt="Work Sample 1"></div>
+                <div class="slide"><img src="images/sample (2).png" alt="Work Sample 2"></div>
+                <div class="slide"><img src="images/sample (3).png" alt="Work Sample 3"></div>
+                <div class="slide"><img src="images/sample (4).png" alt="Work Sample 4"></div>
+                <div class="slide"><img src="images/sample (5).png" alt="Work Sample 5"></div>
+                <div class="slide"><img src="images/sample (6).png" alt="Work Sample 6"></div>
+                <div class="slide"><img src="images/sample (7).png" alt="Work Sample 7"></div>
+                <div class="slide"><img src="images/sample (8).png" alt="Work Sample 8"></div>
+                <div class="slide"><img src="images/sample (9).png" alt="Work Sample 9"></div>
+                <div class="slide"><img src="images/sample (10).png" alt="Work Sample 10"></div>
+                <div class="slide"><img src="images/sample (11).png" alt="Work Sample 11"></div>
+                <div class="slide"><img src="images/sample (12).png" alt="Work Sample 12"></div>
+                <div class="slide"><img src="images/sample (13).png" alt="Work Sample 13"></div>
+                <div class="slide"><img src="images/sample (14).png" alt="Work Sample 14"></div>
+                <div class="slide"><img src="images/sample (15).png" alt="Work Sample 15"></div>
+                <div class="slide"><img src="images/sample (16).png" alt="Work Sample 16"></div>
+                <div class="slide"><img src="images/sample (17).png" alt="Work Sample 17"></div>
+                <div class="slide"><img src="images/sample (18).png" alt="Work Sample 18"></div>
+                <div class="slide"><img src="images/sample (19).png" alt="Work Sample 19"></div>
+                <div class="slide"><img src="images/sample (20).png" alt="Work Sample 20"></div>
+                <div class="slide"><img src="images/sample (21).png" alt="Work Sample 21"></div>
+                <div class="slide"><img src="images/sample (22).png" alt="Work Sample 22"></div>
+                <div class="slide"><img src="images/sample (23).png" alt="Work Sample 23"></div>
+                <div class="slide"><img src="images/sample (24).png" alt="Work Sample 24"></div>
+            </div>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button> <!-- Next button -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section box">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-item">
+                <img src="person (1).jpg" alt="Person 1" class="testimonial-img">
+                <h3>Martin PhenomArts</h3>
+                <p>"Joshua is a flexible talent, creative and motivated to accomplish any goal a client demands, he meets this in a timely fashion and the sky is the limit if you engage him"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-item">
+                <img src="person (2).jpg" alt="Person 2" class="testimonial-img">
+                <h3>Safe African Paradise Adventures</h3>
+                <p>"Very Co-perative and easy to work with."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-item">
+                <img src="person (3).jpg" alt="Person 3" class="testimonial-img">
+                <h3>Macon Duncan</h3>
+                <p>"Very efficient and work is delivered on time."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-item">
+                <img src="person (4).jpg" alt="Person 4" class="testimonial-img">
+                <h3>Brian Ikinu</h3>
+                <p>"Apart from his expertise in graphic design, his creativity, promptness, and willingness to take on any project have made him my go-to graphic designer. Whether it's posters for my page or letterheads for my documentation, you can always rely on him. I highly recommend his services."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-item">
+                <img src="person (5).jpg" alt="Person 5" class="testimonial-img">
+                <h3>Jessy Benjamin</h3>
+                <p>"Very creative and proficient.
+                    He knows how to come up with design concepts that fit brands and their identity.
+                    Timely delivery and good communication 🔥💪🏽"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-item">
+                <img src="person (6).jpg" alt="Person 6" class="testimonial-img">
+                <h3>Joan Waitindi</h3>
+                <p>"I’ve had the privilege of collaborating with Josh on numerous projects at Dimart, and I’m consistently impressed by his exceptional graphic design skills. His ability to transform ideas into visually stunning designs is truly remarkable. Josh has a keen eye for detail and a knack for creating designs that not only look great but also align perfectly with our brand and that of our client's. His creative input has been invaluable to our team, and I’m grateful for the opportunity to work with such a talented designer."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with WhatsApp Button -->
+    <section id="contact" class="section box" style="background-color: black;">
+        <h2>Contact Me</h2>
+        <form action="mailto:joshuangei254@gmail.com" class="contact-form" method="POST">
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/254714294223" class="whatsapp-button" target="_blank">
+            <img src="WhatsApp.png" alt="WhatsApp">
+        </a>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

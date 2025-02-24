@@ -1,0 +1,330 @@
+/* Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('ocean.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Section Layout */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+/* Box Styling for Sections */
+.box {
+    background-color: rgba(17, 45, 78, 0.8);
+    box-shadow: 0 0 15px #3A8DFF;
+    padding: 70px;
+}
+
+/* Header Section */
+#header {
+    background-color: rgba(17, 45, 78, 0.8);
+    color: white;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 4.2rem;
+    color: #F9D342;
+    animation: fadeInDown 2s ease;
+    text-transform: uppercase;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    box-shadow: 0 0 15px #3A8DFF;
+}
+
+.intro-text {
+    font-size: 1.8rem;
+}
+
+.highlight {
+    color: #F9D342;
+}
+
+/* Download Button Styling */
+.download-btn {
+    display: inline-block;
+    background-color: #3A8DFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #2565AE;
+    cursor: pointer;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 3rem;
+    color: #F9D342;
+}
+
+/* Justified Text for About and Experience */
+.justified-text {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjust the gap between buttons */
+    padding: 20px;
+}
+
+.skill-btn {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-btn:hover {
+    background-color: #0056b3; /* Button hover effect */
+}
+
+.skill-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5); /* Button focus effect */
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Stack buttons on smaller screens */
+        align-items: center;
+    }
+}
+
+/* Adjusting the size of the work samples section */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Ensure larger area for samples */
+.slideshow-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+/* Ensuring images are responsive */
+.slideshow-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation buttons styling */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .slideshow-container {
+        width: 100%;
+    }
+    
+    .prev, .next {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .slideshow-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Testimonials Section */
+#testimonials .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial-item {
+    background-color: #16324F;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 30%;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #F9D342;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+#contact {
+    background-color: black;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-group {
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    background-color: #3A8DFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+button:hover {
+    background-color: #2565AE;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-button img {
+    width: 100%;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
