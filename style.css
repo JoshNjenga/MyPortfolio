@@ -332,7 +332,10 @@ button:hover {
 }
 
 .whatsapp-button img {
-  width: 100%;
+  width: 70%;  /* Adjust size to fit better inside the button */
+  height: 70%;
+  display: block;
+  margin: auto;
 }
 
 .whatsapp-button:hover {
